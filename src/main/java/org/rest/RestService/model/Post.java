@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 @Entity
 @XmlRootElement
 public class Post {
@@ -16,13 +17,15 @@ public class Post {
 	private Date created;
 	private int user_id;
 	
+	
+	
+
 	public Post()
 	{
 		
 	}
 	
 	public Post(int post_id, String message, Date created, int user_id) {
-		super();
 		
 		this.message = message;
 		this.created = created;

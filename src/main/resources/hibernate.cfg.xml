@@ -6,9 +6,9 @@
 	<session-factory>
 		
 		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-		<property name="hibernate.connection.url">jdbc:postgresql://$OPENSHIFT_POSTGRESQL_DB_HOST:$OPENSHIFT_POSTGRESQL_DB_PORT/restservicecrud</property>
-		<property name="hibernate.connection.username">adminfubwpga</property>
-		<property name="hibernate.connection.password">s5JtbvJAPNcf</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/postgres</property>
+		<property name="hibernate.connection.username">postgres</property>
+		<property name="hibernate.connection.password">postgres</property>
 		<!--JDBC Connection Pool -->
 		<property name="connection.pool_size">1</property>
 		<!--SQL Dialect -->
